@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    
+    <h2>Form Pendaftaran</h2>
+
+    <form action="proses.php" method="post" enctype="multipart/form-pendaftaran">
+    <fieldset>
+        <legend>Pendaftaran Siswa</legend><br>
+
+        <!-- 1. Text Field dengan placeholder, valie, dan required -->
+         <label for="nama">Nama Lengkap:</label>
+         <input type="teks" id="nama" name="nama" placeholder="Masukkan nama lengkap"><br>
+        
+          <br><label>NIS:</label>
+         <input type="teks" name="nis" placeholder="Masukkan Nis"><br><br>
+
+         <label>Jenis Kelamin:</label>
+         <input type="radio" name="jk" value="laki-laki">Laki-Laki
+         <input type="radio" name="jk" value="Perempuan">Perempuan<br>
+
+         <br><label>Tanggal Lahir:</label>
+         <input type="date" name="tanggal_lahir"><br><br>
+
+         <label>Jurusan:</label>
+         <select name="jurusan">
+         <option value="rpl">Rekayasa Perangkat Lunak</option>
+         <option value="tkj">Teknik Komputer Jaringan</option>
+         <option value="akl">Akuntansi</option>
+         <option value="mplb">Manajemen Perkantoran</option>
+    </select><br>
+
+    <br><label for="alamat">Alamat:</label><br>
+    <textarea id="alamat" name="alamat" rows="5" cols="60" placeholder="Masukkan Almat Lengkap" required></textarea><br>
+
+    <br><label for="foto">Foto</label>
+    <input type="file" id="foto" name="foto" accept="image/*"><br>
+    <br><input type="checkbox" id="setuju" name="setuju" required></input>
+
+    <label for="setuju">Saya menyetujui data yang saya masukkan</label><br>
+
+    <br><button type="submit">Daftar</button>
+    <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+</body>
+</htm
